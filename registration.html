@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div>
+      <h1>Event Registration Form</h1>
+      <div class="container">
+      <img src="image/4977795_2634923.jpg" style="height: 100px; width: 100px; margin: auto; align-items: center;"> 
+      <form id="registrationForm">
+        <div>
+          <label for="companyName">ชื่อบริษัท:</label>
+          <input type="text" id="companyName" name="companyName">
+        </div>
+
+        <div>
+          <label for="boothsize">ขนาดบูธ:</label>
+          <select id="boothsize" name="boothsize">
+            <option value="10x10"> 10x10 </option>
+            <option value="10x15"> 10x15 </option>
+          </select>
+          <label for="boothsize">ฟุต</label>
+        </div>
+        
+        <div>
+          <label for="chairnumber">จำนวนเก้าอี้: <input type="number" id="chairnumber" name="chairnumber"> ตัว</label>
+        </div>
+
+        <div>
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        
+        <div>
+          <input type="checkbox" id="isTable" name="isTable">
+          <label for="isTable">ต้องการโต๊ะตั้งในบูธ</label>
+        </div>
+
+        <div>
+          <label for="contact">ชื่อผู้ติดต่อ:</label>
+          <input type="text" id="contact" name="contact" required>
+        </div>
+
+        <div>
+          <label for="phone">เบอร์ผู้ติดต่อ:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>  
+      </form>
+          <a type="submit" class="submit-button">Submit</a>
+       
+      <a href="index.html" class="prev-button">Back to Home</a>
+      </div>
+    </div>
+  </body>
+</html>
