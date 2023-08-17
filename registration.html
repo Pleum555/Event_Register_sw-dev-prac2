@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="register.js"></script>
   </head>
 
   <body>
@@ -21,6 +22,7 @@
         <div>
           <label for="boothsize">ขนาดบูธ:</label>
           <select id="boothsize" name="boothsize">
+            <option selected value=""> กรุณาเลือกขนาดบูธ </option>
             <option value="10x10"> 10x10 </option>
             <option value="10x15"> 10x15 </option>
           </select>
@@ -28,7 +30,7 @@
         </div>
         
         <div>
-          <label for="chairnumber">จำนวนเก้าอี้: <input type="number" id="chairnumber" name="chairnumber"> ตัว</label>
+          <label for="chairnumber">จำนวนเก้าอี้: <input type="number" id="chairnumber" name="chairnumber" value=0> ตัว</label>
         </div>
 
         <div>
@@ -51,7 +53,7 @@
           <input type="tel" id="phone" name="phone" required>
         </div>  
       </form>
-          <a type="submit" class="submit-button">Submit</a>
+          <a type="submit" class="submit-button" onclick="valueIsValid()">Submit</a>
        
       <a href="index.html" class="prev-button">Back to Home</a>
       </div>
